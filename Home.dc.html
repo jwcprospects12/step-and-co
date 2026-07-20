@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #faf7f2; }
+  a { color: inherit; text-decoration: none; }
+  .nav-services-wrap .services-dropdown { display: none; }
+  .nav-services-wrap:hover .services-dropdown { display: flex; }
+  .services-dropdown a:hover { background: #faf7f2; }
+  @media (max-width: 1150px) {
+    .phone-cta { display: none !important; }
+    .main-nav { gap: 18px !important; }
+  }
+  ::selection { background: oklch(0.42 0.09 152 / 0.25); }
+</style>
+</helmet>
+
+<div style="font-family: 'Work Sans', sans-serif; color: #262220; background: #faf7f2; min-height: 100vh;">
+
+  <!-- NAV -->
+  <nav style="display:flex; align-items:center; justify-content:space-between; padding:18px 48px; background:#faf7f2; border-bottom:1px solid #e8e1d6; position:sticky; top:0; z-index:50;">
+    <a href="Home.dc.html" style="display:flex; align-items:center; gap:10px; margin-right:32px; flex-shrink:0;">
+      <img src="assets/logo.png" alt="Step & Co" style="height:44px; width:44px; object-fit:contain; border-radius:50%;"/>
+      <div style="font-family:'Zilla Slab',serif; font-size:22px; font-weight:700; letter-spacing:0.02em; white-space:nowrap;">STEP <span style="color:oklch(0.42 0.09 152)">&amp;</span> CO</div>
+    </a>
+    <div class="main-nav" style="display:flex; align-items:center; gap:22px;">
+      <a href="Home.dc.html" style="font-weight:600; font-size:15px; border-bottom:2px solid oklch(0.42 0.09 152); padding-bottom:4px;">Home</a>
+      <div class="nav-services-wrap" style="position:relative; display:flex; align-items:center;">
+      <a href="Services.dc.html" style="font-weight:500; font-size:15px; color:#57504a; display:flex; align-items:center; gap:5px;">Services <span style="font-size:10px;">&#9662;</span></a>
+      <div class="services-dropdown" style="position:absolute; top:100%; left:0; padding-top:14px; flex-direction:column; min-width:250px; z-index:60;">
+        <div style="background:#fff; border:1px solid #e8e1d6; border-radius:8px; box-shadow:0 12px 30px rgba(38,34,32,0.14); padding:8px; display:flex; flex-direction:column; gap:2px;">
+          <a href="Services.dc.html" style="padding:10px 14px; border-radius:5px; font-size:14.5px; font-weight:600; color:#262220;">All Services</a>
+          <a href="Service-Roofing.dc.html" style="padding:10px 14px; border-radius:5px; font-size:14.5px; color:#4a443e;">Roofing</a>
+          <a href="Service-Extensions.dc.html" style="padding:10px 14px; border-radius:5px; font-size:14.5px; color:#4a443e;">Extensions &amp; New Builds</a>
+          <a href="Service-General-Building.dc.html" style="padding:10px 14px; border-radius:5px; font-size:14.5px; color:#4a443e;">General Building</a>
+          <a href="Service-Refurbishments.dc.html" style="padding:10px 14px; border-radius:5px; font-size:14.5px; color:#4a443e;">Refurbishments</a>
+          <a href="Service-Kitchens-Bathrooms.dc.html" style="padding:10px 14px; border-radius:5px; font-size:14.5px; color:#4a443e;">Kitchens &amp; Bathrooms</a>
+          <a href="Service-Carpentry.dc.html" style="padding:10px 14px; border-radius:5px; font-size:14.5px; color:#4a443e;">Carpentry &amp; Conversions</a>
+        </div>
+      </div>
+    </div>
+      <a href="Portfolio.dc.html" style="font-weight:500; font-size:15px; color:#57504a;">Portfolio</a>
+      <a href="Reviews.dc.html" style="font-weight:500; font-size:15px; color:#57504a;">Reviews</a>
+      <a href="Contact.dc.html" style="font-weight:500; font-size:15px; color:#57504a;">Contact</a>
+      <a href="tel:07307218723" class="phone-cta" style="border:1.5px solid oklch(0.42 0.09 152); color:oklch(0.42 0.09 152); padding:9px 18px; border-radius:4px; font-weight:600; font-size:14px; white-space:nowrap; flex-shrink:0;">07307 218723</a>
+      <a href="Contact.dc.html" style="background:oklch(0.42 0.09 152); color:#fff; padding:11px 22px; border-radius:4px; font-weight:600; font-size:14px;">Request a Quote</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div style="position:relative; height:640px; width:100%;">
+    <image-slot id="hero-main" src="assets/roofing-hero.png" shape="rect" placeholder="Drop a hero photo (finished extension or roofing project)" style="position:absolute; inset:0; width:100%; height:100%;"></image-slot>
+    <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(20,17,14,0.35) 0%, rgba(20,17,14,0.55) 100%); pointer-events:none;"></div>
+    <div style="position:relative; height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:0 24px; gap:22px;">
+      <div style="color:#f2ede4; font-family:'Zilla Slab',serif; font-weight:700; font-size:64px; line-height:1.05; max-width:900px; text-shadow:0 2px 24px rgba(0,0,0,0.25);">Trusted Builders &amp; Roofers in Bromley</div>
+      <div style="color:#f2ede4; font-size:20px; font-weight:400; max-width:640px; opacity:0.95;">General building, roofing, extensions and refurbishments — done properly, on time, by a local team.</div>
+      <div style="display:flex; gap:16px; margin-top:10px;">
+        <a href="Contact.dc.html" style="background:oklch(0.42 0.09 152); color:#fff; padding:15px 30px; border-radius:4px; font-weight:600; font-size:16px; white-space:nowrap;">Request a Free Quote</a>
+        <a href="Portfolio.dc.html" style="background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.6); color:#fff; padding:15px 30px; border-radius:4px; font-weight:600; font-size:16px; white-space:nowrap;">See Our Work</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- TRUST BADGES -->
+  <div style="display:flex; justify-content:center; gap:80px; padding:56px 24px; flex-wrap:wrap; background:#fff; border-bottom:1px solid #e8e1d6;">
+    <div style="display:flex; flex-direction:column; align-items:center; gap:14px; max-width:180px; text-align:center;">
+      <div style="width:76px; height:76px; border-radius:50%; background:oklch(0.42 0.09 152); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Zilla Slab',serif; font-weight:700; font-size:20px;">£1,000</div>
+      <div style="font-weight:600; font-size:15px;">Checkatrade Guarantee</div>
+    </div>
+    <div style="display:flex; flex-direction:column; align-items:center; gap:14px; max-width:180px; text-align:center;">
+      <div style="width:76px; height:76px; border-radius:50%; background:oklch(0.58 0.13 45); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Zilla Slab',serif; font-weight:700; font-size:20px;">69</div>
+      <div style="font-weight:600; font-size:15px;">Verified Customer Reviews</div>
+    </div>
+    <div style="display:flex; flex-direction:column; align-items:center; gap:14px; max-width:180px; text-align:center;">
+      <div style="width:76px; height:76px; border-radius:50%; background:oklch(0.42 0.09 152); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Zilla Slab',serif; font-weight:700; font-size:20px;">10 yrs</div>
+      <div style="font-weight:600; font-size:15px;">On Checkatrade</div>
+    </div>
+    <div style="display:flex; flex-direction:column; align-items:center; gap:14px; max-width:180px; text-align:center;">
+      <div style="width:76px; height:76px; border-radius:50%; background:oklch(0.58 0.13 45); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Zilla Slab',serif; font-weight:700; font-size:15px; text-align:center; padding:6px;">FMB Member</div>
+      <div style="font-weight:600; font-size:15px;">Federation of Master Builders</div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <div style="max-width:1200px; margin:0 auto; padding:100px 48px; display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center;">
+    <div>
+      <div style="font-size:14px; font-weight:700; letter-spacing:0.08em; color:oklch(0.42 0.09 152); text-transform:uppercase; margin-bottom:14px;">Welcome to Step &amp; Co</div>
+      <div style="font-family:'Zilla Slab',serif; font-size:38px; font-weight:700; line-height:1.15; margin-bottom:22px;">A full-service building and roofing company for Bromley &amp; South East London</div>
+      <div style="font-size:16px; line-height:1.75; color:#4a443e; margin-bottom:16px;">Run by Patrick Steppel, Step &amp; Co has spent 10 years building a reputation for straightforward, no-hassle work that meets deadlines and exceeds expectations. We work closely with every client to ensure complete satisfaction from quote to completion.</div>
+      <div style="font-size:16px; line-height:1.75; color:#4a443e; margin-bottom:28px;">From roofing repairs to full extensions, our fully qualified team covers domestic and commercial work, backed by free estimates and insurance work undertaken.</div>
+      <a href="Contact.dc.html" style="display:inline-block; background:oklch(0.42 0.09 152); color:#fff; padding:14px 28px; border-radius:4px; font-weight:600; font-size:15px;">Get in Touch</a>
+    </div>
+    <image-slot id="about-photo" src="assets/roofing-about.png" shape="rounded" radius="10" placeholder="Drop a photo of the team or a project" style="width:100%; height:420px;"></image-slot>
+  </div>
+
+  <!-- SERVICES PREVIEW -->
+  <div style="background:oklch(0.42 0.09 152); padding:64px 24px 12px; text-align:center;">
+    <div style="font-family:'Zilla Slab',serif; color:#fff; font-size:30px; font-weight:700;">What We Do</div>
+    <div style="color:#e3ecdd; font-size:16px; margin-top:8px;">General building services across Bromley, Kent &amp; South East London</div>
+  </div>
+  <div style="max-width:1200px; margin:0 auto; padding:56px 48px 100px;">
+    <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:28px;">
+      <sc-for list="{{ services }}" as="svc" hint-placeholder-count="6">
+        <a href="Services.dc.html" style="background:#fff; border-radius:8px; padding:36px 30px; box-shadow:0 12px 30px rgba(38,34,32,0.1); display:flex; flex-direction:column; gap:14px;">
+          <div style="width:48px; height:48px; border-radius:8px; background:oklch(0.58 0.13 45 / 0.14); display:flex; align-items:center; justify-content:center;">
+            <div style="width:18px; height:18px; border-radius:4px; background:oklch(0.58 0.13 45);"></div>
+          </div>
+          <div style="font-family:'Zilla Slab',serif; font-weight:700; font-size:19px;">{{ svc.name }}</div>
+          <div style="font-size:14.5px; line-height:1.6; color:#5a544d;">{{ svc.desc }}</div>
+        </a>
+      </sc-for>
+    </div>
+    <div style="text-align:center; margin-top:44px;">
+      <a href="Services.dc.html" style="display:inline-block; border:2px solid oklch(0.42 0.09 152); color:oklch(0.42 0.09 152); padding:13px 30px; border-radius:4px; font-weight:600; font-size:15px;">See All Services</a>
+    </div>
+  </div>
+
+  <!-- REVIEWS TEASER -->
+  <div style="background:#fff; padding:90px 48px; border-top:1px solid #e8e1d6;">
+    <div style="max-width:1200px; margin:0 auto;">
+      <div style="text-align:center; margin-bottom:52px;">
+        <div style="font-family:'Zilla Slab',serif; font-size:32px; font-weight:700;">What Our Customers Say</div>
+        <div style="color:#5a544d; font-size:16px; margin-top:10px;">69 reviews on Checkatrade &middot; verified by real customers</div>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:26px;">
+        <sc-for list="{{ reviews }}" as="rev" hint-placeholder-count="3">
+          <div style="background:#faf7f2; border:1px solid #e8e1d6; border-radius:8px; padding:30px;">
+            <div style="color:oklch(0.58 0.13 45); font-weight:700; font-size:14px; margin-bottom:12px;">{{ rev.score }}/10 &middot; {{ rev.category }}</div>
+            <div style="font-family:'Zilla Slab',serif; font-weight:600; font-size:17px; margin-bottom:10px;">{{ rev.title }}</div>
+            <div style="font-size:14.5px; line-height:1.65; color:#4a443e; margin-bottom:16px;">{{ rev.quote }}</div>
+            <div style="font-size:13px; color:#8a8279;">Job location: {{ rev.location }}</div>
+          </div>
+        </sc-for>
+      </div>
+      <div style="text-align:center; margin-top:40px;">
+        <a href="Reviews.dc.html" style="display:inline-block; background:oklch(0.42 0.09 152); color:#fff; padding:13px 30px; border-radius:4px; font-weight:600; font-size:15px;">Read All Reviews</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA BANNER -->
+  <div style="position:relative; padding:80px 48px; overflow:hidden;">
+    <image-slot id="cta-bg" src="assets/kitchen-interior.png" shape="rect" placeholder="Drop a photo of the van/team" style="position:absolute; inset:0; width:100%; height:100%;"></image-slot>
+    <div style="position:absolute; inset:0; background:rgba(20,17,14,0.72); pointer-events:none;"></div>
+    <div style="position:relative; text-align:center; color:#fff; display:flex; flex-direction:column; align-items:center; gap:16px;">
+      <div style="font-family:'Zilla Slab',serif; font-size:30px; font-weight:700;">Looking for a reliable builder in Bromley?</div>
+      <div style="font-size:17px; opacity:0.9;">Get a free, no-obligation quote from Step &amp; Co today.</div>
+      <div style="display:flex; gap:16px; margin-top:10px;">
+        <a href="Contact.dc.html" style="background:oklch(0.42 0.09 152); color:#fff; padding:15px 32px; border-radius:4px; font-weight:600; font-size:16px;">Request a Quote</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer style="background:#211d1a; color:#d8d2c9; padding:64px 48px 28px;">
+    <div style="max-width:1200px; margin:0 auto; display:grid; grid-template-columns:1.2fr 1fr 1fr 1fr; gap:40px; padding-bottom:40px; border-bottom:1px solid #3a352f;">
+      <div>
+        <div style="font-family:'Zilla Slab',serif; font-size:20px; font-weight:700; color:#fff; margin-bottom:14px;">STEP &amp; CO</div>
+        <div style="font-size:14.5px; line-height:1.7; color:#a89f93;">Full-service building and roofing company serving Bromley, Kent and South East London. Domestic &amp; commercial work, free estimates, insurance work undertaken.</div>
+      </div>
+      <div>
+        <div style="font-weight:700; color:#fff; margin-bottom:16px; font-size:15px;">Quick Links</div>
+        <div style="display:flex; flex-direction:column; gap:10px; font-size:14.5px;">
+          <a href="Home.dc.html" style="color:#a89f93;">Home</a>
+          <a href="Services.dc.html" style="color:#a89f93;">Services</a>
+          <a href="Portfolio.dc.html" style="color:#a89f93;">Portfolio</a>
+          <a href="Reviews.dc.html" style="color:#a89f93;">Reviews</a>
+          <a href="Contact.dc.html" style="color:#a89f93;">Contact</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-weight:700; color:#fff; margin-bottom:16px; font-size:15px;">Services</div>
+        <div style="display:flex; flex-direction:column; gap:10px; font-size:14.5px;">
+          <a href="Services.dc.html" style="color:#a89f93;">Roofing</a>
+          <a href="Services.dc.html" style="color:#a89f93;">Extensions &amp; New Builds</a>
+          <a href="Services.dc.html" style="color:#a89f93;">General Building</a>
+          <a href="Services.dc.html" style="color:#a89f93;">Refurbishments</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-weight:700; color:#fff; margin-bottom:16px; font-size:15px;">Contact</div>
+        <div style="display:flex; flex-direction:column; gap:10px; font-size:14.5px; color:#a89f93;">
+          <div>Bromley, Kent</div>
+          <div>07307 218723</div>
+          <div>Add email address</div>
+        </div>
+      </div>
+    </div>
+    <div style="max-width:1200px; margin:0 auto; padding-top:24px; font-size:13px; color:#8a8279; display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;">
+      <div>&copy; 2026 Step &amp; Co. All rights reserved.</div>
+      <div>Builder &middot; Roofing &middot; Bromley, Kent</div>
+    </div>
+  </footer>
+
+</div>
+<x-import component-from-global-scope="image-slot" from="./image-slot.js" hint-size="1,1" style="display:none"></x-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      services: [
+        { name: "Roofing", desc: "Repairs, replacements and leadworks carried out cleanly and efficiently." },
+        { name: "Extensions & New Builds", desc: "From single-storey extensions to full new-build projects, planned and delivered end to end." },
+        { name: "General Building", desc: "Brick and concrete structural repairs, foundations, demolition and everyday building work." },
+        { name: "Refurbishments", desc: "Whole-property refurbishments including period and listed building restoration." },
+        { name: "Kitchens & Bathrooms", desc: "Kitchen and bathroom fit-outs alongside tiling, plastering and decoration." },
+        { name: "Carpentry & Conversions", desc: "Loft and garage conversions, partition walls, cladding and bespoke carpentry." }
+      ],
+      reviews: [
+        { score: "10", category: "Extensions / Conversions", title: "Ceiling plastering and painting", quote: "Clean job, reliable professionals, highly recommended.", location: "BR1" },
+        { score: "10", category: "Dormer / Roof Windows", title: "Skylights and roof leak repair", quote: "Clean and efficient repair work on my extension roof and skylights. Clear communication throughout.", location: "BR1" },
+        { score: "10", category: "Roofing Repairs", title: "New UPVC fascia, soffit and guttering", quote: "Excellent job, left the area clean and tidy, courteous throughout. Would not hesitate to recommend.", location: "SE9" }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>
