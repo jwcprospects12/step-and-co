@@ -22,6 +22,10 @@
     .main-nav { gap: 18px !important; }
   }
   ::selection { background: oklch(0.42 0.09 152 / 0.25); }
+  summary { list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; float: right; font-size: 20px; color: oklch(0.42 0.09 152); font-weight: 700; }
+  details[open] summary::after { content: "2"; }
 
   /* ---------- Mobile responsive fixes ---------- */
   @media (max-width: 780px) {
@@ -84,6 +88,7 @@
     [style*="grid-template-columns:1.1fr 1fr"] { grid-template-columns: 1fr !important; }
     [style*="grid-template-columns:repeat(3,1fr)"] { grid-template-columns: 1fr !important; }
     [style*="grid-template-columns:repeat(3, 1fr)"] { grid-template-columns: 1fr !important; }
+    [style*="grid-template-columns:repeat(4,1fr)"] { grid-template-columns: 1fr !important; }
 
     /* Headings: scale down oversized desktop type */
     [style*="font-size:64px"] { font-size: 32px !important; }
@@ -165,7 +170,8 @@
     <div>
       <div style="font-size:14px; font-weight:700; letter-spacing:0.08em; color:oklch(0.42 0.09 152); text-transform:uppercase; margin-bottom:14px;">Service</div>
       <div style="font-family:'Zilla Slab',serif; font-size:42px; font-weight:700; line-height:1.15; margin-bottom:20px;">Kitchens &amp; Bathrooms</div>
-      <div style="font-size:16px; line-height:1.75; color:#4a443e;">Kitchen and bathroom fit-outs alongside tiling, plastering and decoration, working to your design and coordinating plumbing throughout. A single trusted team from first fix to final finish.</div>
+      <div style="font-size:16px; line-height:1.75; color:#4a443e; margin-bottom:14px;">Kitchen and bathroom fit outs, along with the tiling, plastering and decoration that finishes them off properly. We work to your design and manage the plumbing throughout, so it's one trusted team from first fix to final finish.</div>
+      <div style="font-size:16px; line-height:1.75; color:#4a443e;">Maybe you've already got a design picked out, or maybe you need a hand planning the space from scratch. Either way, we handle the whole job ourselves, starting with strip out and first fix and finishing with tiling and the last small details, so you're not stuck coordinating separate tradespeople.</div>
       <a href="Contact.html" style="display:inline-block; margin-top:26px; background:oklch(0.42 0.09 152); color:#fff; padding:14px 28px; border-radius:4px; font-weight:600; font-size:15px;">Request a Quote</a>
     </div>
     <img src="assets/kitchen-progress.png" alt="Kitchens &amp; Bathrooms" style="width:100%; height:380px; object-fit:cover; border-radius:10px;"/>
@@ -200,6 +206,64 @@
             <div style="font-size:15px; color:#4a443e; line-height:1.6;">Decoration &amp; finishing</div>
           </div>
       </div>
+    </div>
+  </div>
+
+  <div style="max-width:1100px; margin:0 auto; padding:80px 48px;">
+    <div style="font-family:'Zilla Slab',serif; font-size:26px; font-weight:700; margin-bottom:36px; text-align:center;">How It Works</div>
+    <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:28px;">
+        <div style="display:flex; flex-direction:column; gap:10px;">
+          <div style="width:40px; height:40px; border-radius:50%; background:oklch(0.42 0.09 152); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Zilla Slab',serif; font-weight:700; font-size:16px;">1</div>
+          <div style="font-family:'Zilla Slab',serif; font-weight:700; font-size:16.5px;">Design chat</div>
+          <div style="font-size:14.5px; line-height:1.6; color:#5a544d;">We talk through layout, style and budget together, whether it's a full redesign or just a refresh.</div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:10px;">
+          <div style="width:40px; height:40px; border-radius:50%; background:oklch(0.42 0.09 152); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Zilla Slab',serif; font-weight:700; font-size:16px;">2</div>
+          <div style="font-family:'Zilla Slab',serif; font-weight:700; font-size:16.5px;">Fixed quote</div>
+          <div style="font-size:14.5px; line-height:1.6; color:#5a544d;">One clear quote covering labour, plus materials too if you'd like us to source them for you.</div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:10px;">
+          <div style="width:40px; height:40px; border-radius:50%; background:oklch(0.42 0.09 152); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Zilla Slab',serif; font-weight:700; font-size:16px;">3</div>
+          <div style="font-family:'Zilla Slab',serif; font-weight:700; font-size:16.5px;">Strip out &amp; first fix</div>
+          <div style="font-size:14.5px; line-height:1.6; color:#5a544d;">Old units and fittings come out, and plumbing and electrics get roughed in ready to go.</div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:10px;">
+          <div style="width:40px; height:40px; border-radius:50%; background:oklch(0.42 0.09 152); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Zilla Slab',serif; font-weight:700; font-size:16px;">4</div>
+          <div style="font-family:'Zilla Slab',serif; font-weight:700; font-size:16.5px;">Fit out &amp; finish</div>
+          <div style="font-size:14.5px; line-height:1.6; color:#5a544d;">Units, tiling and the final touches go in, then a full clean before we hand it back to you.</div>
+        </div>
+    </div>
+  </div>
+
+  <div style="background:#fff; border-top:1px solid #e8e1d6; padding:80px 48px;">
+    <div style="max-width:800px; margin:0 auto;">
+      <div style="font-family:'Zilla Slab',serif; font-size:26px; font-weight:700; margin-bottom:32px; text-align:center;">Frequently Asked Questions</div>
+      <div style="display:flex; flex-direction:column; gap:12px;">
+      <details style="background:#faf7f2; border:1px solid #e8e1d6; border-radius:8px; padding:4px 22px;">
+        <summary style="padding:16px 0; font-family:'Zilla Slab',serif; font-weight:600; font-size:16px; cursor:pointer;">Do you supply the kitchen or bathroom units, or just fit them?</summary>
+        <div style="font-size:14.5px; line-height:1.7; color:#4a443e; padding-bottom:18px;">Either. We can supply and fit the whole thing, or just install units you've already bought from a supplier of your choice. Whatever works best for you.</div>
+      </details>
+      <details style="background:#faf7f2; border:1px solid #e8e1d6; border-radius:8px; padding:4px 22px;">
+        <summary style="padding:16px 0; font-family:'Zilla Slab',serif; font-weight:600; font-size:16px; cursor:pointer;">How long does a bathroom refit take?</summary>
+        <div style="font-size:14.5px; line-height:1.7; color:#4a443e; padding-bottom:18px;">A standard bathroom usually takes about 1 to 2 weeks. A full kitchen tends to run 2 to 3 weeks, depending on how much work's involved.</div>
+      </details>
+      <details style="background:#faf7f2; border:1px solid #e8e1d6; border-radius:8px; padding:4px 22px;">
+        <summary style="padding:16px 0; font-family:'Zilla Slab',serif; font-weight:600; font-size:16px; cursor:pointer;">Do you coordinate plumbing and electrics?</summary>
+        <div style="font-size:14.5px; line-height:1.7; color:#4a443e; padding-bottom:18px;">Yes, we manage all the trades involved so plumbing, electrics, tiling and fitting happen in the right order, without you needing to chase anyone yourself.</div>
+      </details>
+      <details style="background:#faf7f2; border:1px solid #e8e1d6; border-radius:8px; padding:4px 22px;">
+        <summary style="padding:16px 0; font-family:'Zilla Slab',serif; font-weight:600; font-size:16px; cursor:pointer;">Can you work from a supplier's design, like Wren or Howdens?</summary>
+        <div style="font-size:14.5px; line-height:1.7; color:#4a443e; padding-bottom:18px;">Yes, we fit kitchens designed through suppliers like Wren and Howdens fairly often. Just bring us the plan and we'll take it from there.</div>
+      </details>
+      </div>
+    </div>
+  </div>
+
+  <div style="max-width:1000px; margin:0 auto; padding:0 48px 80px; text-align:center;">
+    <div style="font-size:14px; font-weight:700; letter-spacing:0.06em; color:#8a8279; text-transform:uppercase; margin-bottom:18px;">You Might Also Need</div>
+    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:14px;">
+        <a href="Service-Refurbishments.html" style="background:#faf7f2; border:1px solid #e8e1d6; border-radius:999px; padding:11px 22px; font-size:14.5px; font-weight:600; color:#262220;">Refurbishments &rarr;</a>
+        <a href="Service-Carpentry.html" style="background:#faf7f2; border:1px solid #e8e1d6; border-radius:999px; padding:11px 22px; font-size:14.5px; font-weight:600; color:#262220;">Carpentry &amp; Conversions &rarr;</a>
     </div>
   </div>
 
