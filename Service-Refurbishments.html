@@ -22,6 +22,10 @@
     .main-nav { gap: 18px !important; }
   }
   ::selection { background: oklch(0.42 0.09 152 / 0.25); }
+  summary { list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; float: right; font-size: 20px; color: oklch(0.42 0.09 152); font-weight: 700; }
+  details[open] summary::after { content: "2"; }
 
   /* ---------- Mobile responsive fixes ---------- */
   @media (max-width: 780px) {
@@ -84,6 +88,7 @@
     [style*="grid-template-columns:1.1fr 1fr"] { grid-template-columns: 1fr !important; }
     [style*="grid-template-columns:repeat(3,1fr)"] { grid-template-columns: 1fr !important; }
     [style*="grid-template-columns:repeat(3, 1fr)"] { grid-template-columns: 1fr !important; }
+    [style*="grid-template-columns:repeat(4,1fr)"] { grid-template-columns: 1fr !important; }
 
     /* Headings: scale down oversized desktop type */
     [style*="font-size:64px"] { font-size: 32px !important; }
@@ -165,7 +170,8 @@
     <div>
       <div style="font-size:14px; font-weight:700; letter-spacing:0.08em; color:oklch(0.42 0.09 152); text-transform:uppercase; margin-bottom:14px;">Service</div>
       <div style="font-family:'Zilla Slab',serif; font-size:42px; font-weight:700; line-height:1.15; margin-bottom:20px;">Refurbishments</div>
-      <div style="font-size:16px; line-height:1.75; color:#4a443e;">Whole-property refurbishments carried out to a high standard, including period and listed building restoration. We also handle partition walls, suspended ceilings, cladding, and loft or garage conversions as part of a wider refurbishment.</div>
+      <div style="font-size:16px; line-height:1.75; color:#4a443e; margin-bottom:14px;">Whole property refurbishments carried out properly, including period and listed building restoration. We also take care of partition walls, suspended ceilings, cladding, and loft or garage conversions when they're part of a bigger refurbishment.</div>
+      <div style="font-size:16px; line-height:1.75; color:#4a443e;">Refurbishing an entire property is a different scale of job to doing up a single room, so where we can, we plan the work in phases. That keeps disruption down and means everything, from the structural work through to the final decoration, is handled by the same team throughout.</div>
       <a href="Contact.html" style="display:inline-block; margin-top:26px; background:oklch(0.42 0.09 152); color:#fff; padding:14px 28px; border-radius:4px; font-weight:600; font-size:15px;">Request a Quote</a>
     </div>
     <img src="assets/hallway-bifold-garden.png" alt="Refurbishments" style="width:100%; height:380px; object-fit:cover; border-radius:10px;"/>
@@ -200,6 +206,64 @@
             <div style="font-size:15px; color:#4a443e; line-height:1.6;">Loft &amp; garage conversions</div>
           </div>
       </div>
+    </div>
+  </div>
+
+  <div style="max-width:1100px; margin:0 auto; padding:80px 48px;">
+    <div style="font-family:'Zilla Slab',serif; font-size:26px; font-weight:700; margin-bottom:36px; text-align:center;">How It Works</div>
+    <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:28px;">
+        <div style="display:flex; flex-direction:column; gap:10px;">
+          <div style="width:40px; height:40px; border-radius:50%; background:oklch(0.42 0.09 152); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Zilla Slab',serif; font-weight:700; font-size:16px;">1</div>
+          <div style="font-family:'Zilla Slab',serif; font-weight:700; font-size:16.5px;">Walkthrough</div>
+          <div style="font-size:14.5px; line-height:1.6; color:#5a544d;">We visit the property, listen to what you're after, and flag any structural or heritage considerations early on.</div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:10px;">
+          <div style="width:40px; height:40px; border-radius:50%; background:oklch(0.42 0.09 152); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Zilla Slab',serif; font-weight:700; font-size:16px;">2</div>
+          <div style="font-family:'Zilla Slab',serif; font-weight:700; font-size:16.5px;">Quote &amp; timeline</div>
+          <div style="font-size:14.5px; line-height:1.6; color:#5a544d;">A detailed quote plus a realistic schedule, phased if that suits the property and your plans better.</div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:10px;">
+          <div style="width:40px; height:40px; border-radius:50%; background:oklch(0.42 0.09 152); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Zilla Slab',serif; font-weight:700; font-size:16px;">3</div>
+          <div style="font-family:'Zilla Slab',serif; font-weight:700; font-size:16.5px;">Phased work</div>
+          <div style="font-size:14.5px; line-height:1.6; color:#5a544d;">Work carried out in a sensible order to keep disruption down, especially useful if you're staying put during it.</div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:10px;">
+          <div style="width:40px; height:40px; border-radius:50%; background:oklch(0.42 0.09 152); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Zilla Slab',serif; font-weight:700; font-size:16px;">4</div>
+          <div style="font-family:'Zilla Slab',serif; font-weight:700; font-size:16.5px;">Handover</div>
+          <div style="font-size:14.5px; line-height:1.6; color:#5a544d;">A final walkthrough and the snagging list cleared before we consider the job actually finished.</div>
+        </div>
+    </div>
+  </div>
+
+  <div style="background:#fff; border-top:1px solid #e8e1d6; padding:80px 48px;">
+    <div style="max-width:800px; margin:0 auto;">
+      <div style="font-family:'Zilla Slab',serif; font-size:26px; font-weight:700; margin-bottom:32px; text-align:center;">Frequently Asked Questions</div>
+      <div style="display:flex; flex-direction:column; gap:12px;">
+      <details style="background:#faf7f2; border:1px solid #e8e1d6; border-radius:8px; padding:4px 22px;">
+        <summary style="padding:16px 0; font-family:'Zilla Slab',serif; font-weight:600; font-size:16px; cursor:pointer;">Can I stay in the property during a refurbishment?</summary>
+        <div style="font-size:14.5px; line-height:1.7; color:#4a443e; padding-bottom:18px;">Often, yes, particularly if we phase the work room by room. We'll talk through what's realistic for your project during the initial walkthrough.</div>
+      </details>
+      <details style="background:#faf7f2; border:1px solid #e8e1d6; border-radius:8px; padding:4px 22px;">
+        <summary style="padding:16px 0; font-family:'Zilla Slab',serif; font-weight:600; font-size:16px; cursor:pointer;">Do you handle listed building consent?</summary>
+        <div style="font-size:14.5px; line-height:1.7; color:#4a443e; padding-bottom:18px;">Yes, we've got experience with period and listed properties and can advise on what consents you'll need before anything gets underway.</div>
+      </details>
+      <details style="background:#faf7f2; border:1px solid #e8e1d6; border-radius:8px; padding:4px 22px;">
+        <summary style="padding:16px 0; font-family:'Zilla Slab',serif; font-weight:600; font-size:16px; cursor:pointer;">How do you protect the rest of the house during work?</summary>
+        <div style="font-size:14.5px; line-height:1.7; color:#4a443e; padding-bottom:18px;">We section off the work areas, use dust sheets and barriers, and clean up as we go. That matters a lot more if you're living in the property while the work's happening.</div>
+      </details>
+      <details style="background:#faf7f2; border:1px solid #e8e1d6; border-radius:8px; padding:4px 22px;">
+        <summary style="padding:16px 0; font-family:'Zilla Slab',serif; font-weight:600; font-size:16px; cursor:pointer;">Can you refurbish one room at a time?</summary>
+        <div style="font-size:14.5px; line-height:1.7; color:#4a443e; padding-bottom:18px;">Yes, this is a pretty common way to approach bigger refurbishments, and it can make the whole project easier to live with and budget for.</div>
+      </details>
+      </div>
+    </div>
+  </div>
+
+  <div style="max-width:1000px; margin:0 auto; padding:0 48px 80px; text-align:center;">
+    <div style="font-size:14px; font-weight:700; letter-spacing:0.06em; color:#8a8279; text-transform:uppercase; margin-bottom:18px;">You Might Also Need</div>
+    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:14px;">
+        <a href="Service-General-Building.html" style="background:#faf7f2; border:1px solid #e8e1d6; border-radius:999px; padding:11px 22px; font-size:14.5px; font-weight:600; color:#262220;">General Building &rarr;</a>
+        <a href="Service-Kitchens-Bathrooms.html" style="background:#faf7f2; border:1px solid #e8e1d6; border-radius:999px; padding:11px 22px; font-size:14.5px; font-weight:600; color:#262220;">Kitchens &amp; Bathrooms &rarr;</a>
     </div>
   </div>
 
