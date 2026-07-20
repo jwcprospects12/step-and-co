@@ -24,6 +24,10 @@
     .main-nav { gap: 18px !important; }
   }
   ::selection { background: oklch(0.42 0.09 152 / 0.25); }
+  summary { list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; float: right; font-size: 20px; color: oklch(0.42 0.09 152); font-weight: 700; }
+  details[open] summary::after { content: "2"; }
 
   /* ---------- Mobile responsive fixes ---------- */
   @media (max-width: 780px) {
@@ -86,6 +90,7 @@
     [style*="grid-template-columns:1.1fr 1fr"] { grid-template-columns: 1fr !important; }
     [style*="grid-template-columns:repeat(3,1fr)"] { grid-template-columns: 1fr !important; }
     [style*="grid-template-columns:repeat(3, 1fr)"] { grid-template-columns: 1fr !important; }
+    [style*="grid-template-columns:repeat(4,1fr)"] { grid-template-columns: 1fr !important; }
 
     /* Headings: scale down oversized desktop type */
     [style*="font-size:64px"] { font-size: 32px !important; }
@@ -199,7 +204,7 @@
         <div style="display:flex; flex-direction:column; gap:12px; font-size:15.5px; color:#4a443e;">
           <div><span style="font-weight:600;">Area:</span> Bromley, Kent &amp; South East London</div>
           <div><span style="font-weight:600;">Phone:</span> 07307 218723</div>
-          <div><span style="font-weight:600;">Email:</span> Add email address</div>
+          <div><span style="font-weight:600;">Email:</span> stepandcoltd@gmail.com</div>
           <div><span style="font-weight:600;">Hours:</span> Add opening hours</div>
         </div>
       </div>
@@ -257,7 +262,7 @@
         <div style="display:flex; flex-direction:column; gap:10px; font-size:14.5px; color:#a89f93;">
           <div>Bromley, Kent</div>
           <div>07307 218723</div>
-          <div>Add email address</div>
+          <div>stepandcoltd@gmail.com</div>
         </div>
       </div>
     </div>

@@ -22,6 +22,10 @@
     .main-nav { gap: 18px !important; }
   }
   ::selection { background: oklch(0.42 0.09 152 / 0.25); }
+  summary { list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; float: right; font-size: 20px; color: oklch(0.42 0.09 152); font-weight: 700; }
+  details[open] summary::after { content: "2"; }
 
   /* ---------- Mobile responsive fixes ---------- */
   @media (max-width: 780px) {
@@ -84,6 +88,7 @@
     [style*="grid-template-columns:1.1fr 1fr"] { grid-template-columns: 1fr !important; }
     [style*="grid-template-columns:repeat(3,1fr)"] { grid-template-columns: 1fr !important; }
     [style*="grid-template-columns:repeat(3, 1fr)"] { grid-template-columns: 1fr !important; }
+    [style*="grid-template-columns:repeat(4,1fr)"] { grid-template-columns: 1fr !important; }
 
     /* Headings: scale down oversized desktop type */
     [style*="font-size:64px"] { font-size: 32px !important; }
@@ -166,7 +171,7 @@
     <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(20,17,14,0.35) 0%, rgba(20,17,14,0.55) 100%); pointer-events:none;"></div>
     <div style="position:relative; height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:0 24px; gap:22px;">
       <div style="color:#f2ede4; font-family:'Zilla Slab',serif; font-weight:700; font-size:64px; line-height:1.05; max-width:900px; text-shadow:0 2px 24px rgba(0,0,0,0.25);">Trusted Builders &amp; Roofers in Bromley</div>
-      <div style="color:#f2ede4; font-size:20px; font-weight:400; max-width:640px; opacity:0.95;">General building, roofing, extensions and refurbishments — done properly, on time, by a local team.</div>
+      <div style="color:#f2ede4; font-size:20px; font-weight:400; max-width:640px; opacity:0.95;">General building, roofing, extensions and refurbishments, done properly, on time, by a local team.</div>
       <div style="display:flex; gap:16px; margin-top:10px;">
         <a href="Contact.html" style="background:oklch(0.42 0.09 152); color:#fff; padding:15px 30px; border-radius:4px; font-weight:600; font-size:16px; white-space:nowrap;">Request a Free Quote</a>
         <a href="Portfolio.html" style="background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.6); color:#fff; padding:15px 30px; border-radius:4px; font-weight:600; font-size:16px; white-space:nowrap;">See Our Work</a>
@@ -332,7 +337,7 @@
         <div style="display:flex; flex-direction:column; gap:10px; font-size:14.5px; color:#a89f93;">
           <div>Bromley, Kent</div>
           <div>07307 218723</div>
-          <div>Add email address</div>
+          <div>stepandcoltd@gmail.com</div>
         </div>
       </div>
     </div>
