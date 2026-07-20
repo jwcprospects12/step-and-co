@@ -22,6 +22,10 @@
     .main-nav { gap: 18px !important; }
   }
   ::selection { background: oklch(0.42 0.09 152 / 0.25); }
+  summary { list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; float: right; font-size: 20px; color: oklch(0.42 0.09 152); font-weight: 700; }
+  details[open] summary::after { content: "2"; }
 
   /* ---------- Mobile responsive fixes ---------- */
   @media (max-width: 780px) {
@@ -84,6 +88,7 @@
     [style*="grid-template-columns:1.1fr 1fr"] { grid-template-columns: 1fr !important; }
     [style*="grid-template-columns:repeat(3,1fr)"] { grid-template-columns: 1fr !important; }
     [style*="grid-template-columns:repeat(3, 1fr)"] { grid-template-columns: 1fr !important; }
+    [style*="grid-template-columns:repeat(4,1fr)"] { grid-template-columns: 1fr !important; }
 
     /* Headings: scale down oversized desktop type */
     [style*="font-size:64px"] { font-size: 32px !important; }
@@ -165,7 +170,8 @@
     <div>
       <div style="font-size:14px; font-weight:700; letter-spacing:0.08em; color:oklch(0.42 0.09 152); text-transform:uppercase; margin-bottom:14px;">Service</div>
       <div style="font-family:'Zilla Slab',serif; font-size:42px; font-weight:700; line-height:1.15; margin-bottom:20px;">General Building</div>
-      <div style="font-size:16px; line-height:1.75; color:#4a443e;">Brick and concrete structural repairs, foundations, demolition and everyday building work. We also handle property maintenance, fire and flood renovation, and insurance-backed repair work — domestic and commercial.</div>
+      <div style="font-size:16px; line-height:1.75; color:#4a443e; margin-bottom:14px;">Brick and concrete structural repairs, foundations, demolition, and all the everyday building work that keeps a property standing up properly. We also do property maintenance, fire and flood renovation, and insurance-backed repairs for homes and businesses alike.</div>
+      <div style="font-size:16px; line-height:1.75; color:#4a443e;">Not every job is a big project. Sometimes it's just a cracked wall, a bit of brickwork that needs replacing, or getting a property back in order after a fire or a flood. We take on jobs of every size, and we're happy to deal directly with insurers when that's needed.</div>
       <a href="Contact.html" style="display:inline-block; margin-top:26px; background:oklch(0.42 0.09 152); color:#fff; padding:14px 28px; border-radius:4px; font-weight:600; font-size:15px;">Request a Quote</a>
     </div>
     <img src="assets/hallway-radiator.png" alt="General Building" style="width:100%; height:380px; object-fit:cover; border-radius:10px;"/>
@@ -200,6 +206,64 @@
             <div style="font-size:15px; color:#4a443e; line-height:1.6;">Insurance claim work</div>
           </div>
       </div>
+    </div>
+  </div>
+
+  <div style="max-width:1100px; margin:0 auto; padding:80px 48px;">
+    <div style="font-family:'Zilla Slab',serif; font-size:26px; font-weight:700; margin-bottom:36px; text-align:center;">How It Works</div>
+    <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:28px;">
+        <div style="display:flex; flex-direction:column; gap:10px;">
+          <div style="width:40px; height:40px; border-radius:50%; background:oklch(0.42 0.09 152); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Zilla Slab',serif; font-weight:700; font-size:16px;">1</div>
+          <div style="font-family:'Zilla Slab',serif; font-weight:700; font-size:16.5px;">Site visit</div>
+          <div style="font-size:14.5px; line-height:1.6; color:#5a544d;">We come and take a proper look at the actual problem, not just a guess made from photos.</div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:10px;">
+          <div style="width:40px; height:40px; border-radius:50%; background:oklch(0.42 0.09 152); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Zilla Slab',serif; font-weight:700; font-size:16px;">2</div>
+          <div style="font-family:'Zilla Slab',serif; font-weight:700; font-size:16.5px;">Fixed-price quote</div>
+          <div style="font-size:14.5px; line-height:1.6; color:#5a544d;">One clear price, no vague allowances tucked away, so you know exactly what you're paying for.</div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:10px;">
+          <div style="width:40px; height:40px; border-radius:50%; background:oklch(0.42 0.09 152); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Zilla Slab',serif; font-weight:700; font-size:16px;">3</div>
+          <div style="font-family:'Zilla Slab',serif; font-weight:700; font-size:16.5px;">Work to schedule</div>
+          <div style="font-size:14.5px; line-height:1.6; color:#5a544d;">Work done on the date we agree, with as little disruption to the rest of the property as possible.</div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:10px;">
+          <div style="width:40px; height:40px; border-radius:50%; background:oklch(0.42 0.09 152); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Zilla Slab',serif; font-weight:700; font-size:16px;">4</div>
+          <div style="font-family:'Zilla Slab',serif; font-weight:700; font-size:16.5px;">Final walkthrough</div>
+          <div style="font-size:14.5px; line-height:1.6; color:#5a544d;">We check the finished job together with you before we call it complete.</div>
+        </div>
+    </div>
+  </div>
+
+  <div style="background:#fff; border-top:1px solid #e8e1d6; padding:80px 48px;">
+    <div style="max-width:800px; margin:0 auto;">
+      <div style="font-family:'Zilla Slab',serif; font-size:26px; font-weight:700; margin-bottom:32px; text-align:center;">Frequently Asked Questions</div>
+      <div style="display:flex; flex-direction:column; gap:12px;">
+      <details style="background:#faf7f2; border:1px solid #e8e1d6; border-radius:8px; padding:4px 22px;">
+        <summary style="padding:16px 0; font-family:'Zilla Slab',serif; font-weight:600; font-size:16px; cursor:pointer;">Do you handle insurance claim work?</summary>
+        <div style="font-size:14.5px; line-height:1.7; color:#4a443e; padding-bottom:18px;">Yes, we do this regularly, including fire and flood damage, and we're happy to liaise directly with your insurer or loss adjuster if that helps things move faster.</div>
+      </details>
+      <details style="background:#faf7f2; border:1px solid #e8e1d6; border-radius:8px; padding:4px 22px;">
+        <summary style="padding:16px 0; font-family:'Zilla Slab',serif; font-weight:600; font-size:16px; cursor:pointer;">Can you match existing brickwork?</summary>
+        <div style="font-size:14.5px; line-height:1.7; color:#4a443e; padding-bottom:18px;">Usually, yes. We'll source matching brick and mortar wherever we can so the repair blends in rather than sticking out like a patch job.</div>
+      </details>
+      <details style="background:#faf7f2; border:1px solid #e8e1d6; border-radius:8px; padding:4px 22px;">
+        <summary style="padding:16px 0; font-family:'Zilla Slab',serif; font-weight:600; font-size:16px; cursor:pointer;">Do you do small jobs as well as big projects?</summary>
+        <div style="font-size:14.5px; line-height:1.7; color:#4a443e; padding-bottom:18px;">Definitely. General building covers everything from a single wall repair right up to bigger structural work. Nothing's too small to get a quote for.</div>
+      </details>
+      <details style="background:#faf7f2; border:1px solid #e8e1d6; border-radius:8px; padding:4px 22px;">
+        <summary style="padding:16px 0; font-family:'Zilla Slab',serif; font-weight:600; font-size:16px; cursor:pointer;">Are you available for emergency repairs?</summary>
+        <div style="font-size:14.5px; line-height:1.7; color:#4a443e; padding-bottom:18px;">If it's an urgent structural issue, get in touch and tell us it's urgent. We'll do our best to get someone out to you quickly.</div>
+      </details>
+      </div>
+    </div>
+  </div>
+
+  <div style="max-width:1000px; margin:0 auto; padding:0 48px 80px; text-align:center;">
+    <div style="font-size:14px; font-weight:700; letter-spacing:0.06em; color:#8a8279; text-transform:uppercase; margin-bottom:18px;">You Might Also Need</div>
+    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:14px;">
+        <a href="Service-Roofing.html" style="background:#faf7f2; border:1px solid #e8e1d6; border-radius:999px; padding:11px 22px; font-size:14.5px; font-weight:600; color:#262220;">Roofing &rarr;</a>
+        <a href="Service-Refurbishments.html" style="background:#faf7f2; border:1px solid #e8e1d6; border-radius:999px; padding:11px 22px; font-size:14.5px; font-weight:600; color:#262220;">Refurbishments &rarr;</a>
     </div>
   </div>
 
