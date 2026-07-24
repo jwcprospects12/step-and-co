@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jwcprospects12.github.io/step-and-co/sitemap.xml
+Sitemap: https://stepandcoltd.com/sitemap.xml
