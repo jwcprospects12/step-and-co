@@ -264,14 +264,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div style="background:#fff; border:1px solid #e8e1d6; border-radius:8px; padding:40px;">
       <div style="font-family:'Zilla Slab',serif; font-size:22px; font-weight:700; margin-bottom:24px;">Request a Quote</div>
-      <form style="display:flex; flex-direction:column; gap:18px;" onsubmit="event.preventDefault()">
+      <form action="https://formsubmit.co/stepandcoltd@gmail.com" method="POST" style="display:flex; flex-direction:column; gap:18px;">
+        <input type="hidden" name="_subject" value="New quote request from website">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="Thank-You.html">
         <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
-          <input type="text" placeholder="Full name" style="padding:13px 14px; border:1px solid #e8e1d6; border-radius:4px; font-size:15px;"/>
-          <input type="tel" placeholder="Phone number" style="padding:13px 14px; border:1px solid #e8e1d6; border-radius:4px; font-size:15px;"/>
+          <input type="text" name="name" required placeholder="Full name" style="padding:13px 14px; border:1px solid #e8e1d6; border-radius:4px; font-size:15px;"/>
+          <input type="tel" name="phone" required placeholder="Phone number" style="padding:13px 14px; border:1px solid #e8e1d6; border-radius:4px; font-size:15px;"/>
         </div>
-        <input type="email" placeholder="Email address" style="padding:13px 14px; border:1px solid #e8e1d6; border-radius:4px; font-size:15px;"/>
-        <input type="text" placeholder="Postcode" style="padding:13px 14px; border:1px solid #e8e1d6; border-radius:4px; font-size:15px;"/>
-        <select style="padding:13px 14px; border:1px solid #e8e1d6; border-radius:4px; font-size:15px; color:#57504a;">
+        <input type="email" name="email" required placeholder="Email address" style="padding:13px 14px; border:1px solid #e8e1d6; border-radius:4px; font-size:15px;"/>
+        <input type="text" name="postcode" placeholder="Postcode" style="padding:13px 14px; border:1px solid #e8e1d6; border-radius:4px; font-size:15px;"/>
+        <select name="service" style="padding:13px 14px; border:1px solid #e8e1d6; border-radius:4px; font-size:15px; color:#57504a;">
           <option>What do you need help with?</option>
           <option>Roofing</option>
           <option>Extension / New Build</option>
@@ -280,7 +283,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <option>Kitchen / Bathroom</option>
           <option>Something else</option>
         </select>
-        <textarea placeholder="Tell us a bit about the job..." rows="5" style="padding:13px 14px; border:1px solid #e8e1d6; border-radius:4px; font-size:15px; resize:vertical;"></textarea>
+        <textarea name="message" placeholder="Tell us a bit about the job..." rows="5" style="padding:13px 14px; border:1px solid #e8e1d6; border-radius:4px; font-size:15px; resize:vertical;"></textarea>
         <button type="submit" style="background:oklch(0.42 0.09 152); color:#fff; border:none; padding:15px; border-radius:4px; font-weight:600; font-size:16px; cursor:pointer;">Send Quote Request</button>
       </form>
     </div>
